@@ -1,0 +1,15 @@
+<p>
+  <strong>Name:</strong>
+  <%= room.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= room.description %>
+</p>
+
+<p>
+  <%= link_to 'Destroy Room', [room.hotel, room],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
